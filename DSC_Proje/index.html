@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/stylee.css">
+
+  <title>film ara</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+     
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-left">
+          <h1>DahaSonraİzle.com</h1>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a id="" href="./index.html">Film Ara</a></li>
+          <li><a id="" href="./fav.html">Daha Sonra İzle</a></li>
+          <li><a id="logout" href="#">Çıkış Yap</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row" style="margin-bottom: 10px;">
+      <h3 class="text-center">FİLM ARA</h3>
+      <div class="col-md-12 text-center">
+        <div class="form-inline">
+          <div class="form-group">
+            <input type="text" placeholder="Aramak istediğiniz filmi yazınız" id="movieNameInput" class="form-control"
+              style="width: 800px;">
+            <button id="movieSearchButton" onclick="searchForMovie()"
+              class="btn btn-default ">ARA</button>
+          </div>
+          <div class="movie-showcase" id="movie-showcase">
+            <img id="moviePoster" />
+            <div class="movieText">
+
+              <h1 id="movieName"></h1>
+              <hr>
+              <h2>Genre : <span id="movieGenre"></span></h2>
+              <h2>Year : <span id="movieYear"></span></h2>
+              <h2>Run Time : <span id="movieTime"></span></h2>
+              <h2>Directors : <span id="movieDir"></span></h2>
+              <h2>Plot :</h2>
+              <h3><span id="moviePlot"></span></h3>
+            </div>
+
+          </div>
+          <button class="btn btn-danger plus sendToFireBase" id="plus">Daha Sonra İzle</button>
+          <button class="btn btn-succes plus ">batu</button>
+          <div>
+            <h1 id="fav"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/assent/jquery-3.2.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
+    <script src="./js/movieProvider.js"></script>
+</body>
+
+</html>

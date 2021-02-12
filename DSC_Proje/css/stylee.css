@@ -1,0 +1,77 @@
+.navbar {
+  border-radius: 0px !important;
+}
+.navbar h1{
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #ddd;
+}
+
+.w100 {
+  width: 100px;
+}
+
+
+body {
+  background-color: #ddd;
+}
+
+.well {
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.3);
+}
+
+
+.movie-showcase {
+  margin: 50px 0;
+  padding: 10px;
+  width: 1000px;
+  color: #ddd;
+  border-radius: 5px;
+  /* display: inline-flex; */
+  background-color: #222;
+  display: none;
+}
+.movie-showcase #moviePoster {
+  margin: 5px;
+  border-radius: 2.5px;
+  height: auto;
+  width: auto;
+}
+
+.movieText {
+  margin: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+
+}
+
+.movieText h1 {
+  font-weight: bold;
+  font-size: 60px;
+  margin-left:20px ;
+}
+.movieText h2 {
+    font-weight: bold;
+    font-size: 25px;
+}
+.movieText h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+.plus{
+    display: none;
+    width:600px ;
+    height: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.logo{
+  text-align: center;
+  font-size: 100px;
+  margin-top: 100px;
+  font-weight: bolder;
+  background-color: #222;
+  color: #ddd;
+}
+

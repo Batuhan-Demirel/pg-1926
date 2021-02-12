@@ -1,0 +1,27 @@
+table{
+    margin: auto;
+    padding: auto;
+    
+}
+
+.black,.white{
+width: 92px;
+height: 92px;
+}
+.black{
+background-color: grey;
+}
+.white{
+    background-color: lightgrey;
+}
+.sayi{
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+.harf{
+    text-align: center;
+    margin: auto;
+    padding: auto ;
+
+}

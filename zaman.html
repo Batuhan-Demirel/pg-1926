@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zaman</title>
+    <style>
+        body{
+            background-color: rgb(121, 120, 120);
+        }
+        .container{
+            width: 100%;
+            font-size: 50px;
+            text-align: center;
+            margin-top: 20%;
+        }
+        p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <p id="batu"></p>
+    <p id="demo"></p>
+</div>
+
+
+<script>
+var d = new Date();
+var n = d.getHours();
+document.getElementById("batu").innerHTML = String(n) +": "+ String(d.getMinutes());
+
+if( (d.getMinutes()) >= 0 && (d.getMinutes()) < 10 ){
+    document.getElementById("batu").innerHTML = String(n) +": 0"+ String(d.getMinutes());
+};
+
+if(n>=6 && n<10){
+    document.getElementById("demo").innerHTML = "Günaydın";
+}else if(n>=10 && n<17){
+    document.getElementById("demo").innerHTML = "İyi Günler";
+}else if(n>=17 && n<20){
+    document.getElementById("demo").innerHTML = "İyi Akşamlar";
+}else if(n>=20 && n<=23){
+    document.getElementById("demo").innerHTML = "İyi Geceler";
+}else if(n>=0 && n<6){
+    document.getElementById("demo").innerHTML = "Esenlikler Dilerim";
+}else{
+    document.getElementById("demo").innerHTML = "Geçersiz";
+};
+</script>
+
+</body>
+</html>
+
